@@ -1,0 +1,65 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+
+
+public class WD {
+
+	public static void main(String[] args) {
+		
+		TelefonbuchEintrag[] tb = new TelefonbuchEintrag[10];
+		int z = 0;
+		while(true)
+		{
+			String text = read();
+			char c = text.charAt(0);
+			
+			switch(c)
+			{
+			case 'E':
+				
+			
+			
+				tb[z].vname = read();
+				tb[z].nname = read();
+				tb[z].tel = read();
+				
+				z++;
+				
+				
+				
+				break;
+			case 'A':
+				for(int i = 0;i<tb.length;i++)
+				{
+					System.out.println(tb[i]);
+				}
+				break;
+			case 'X':
+				System.exit(0);
+				break;
+			}
+			
+			
+		}
+		
+	}
+	
+	public static String read()
+	{
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		String text = null;
+		try {
+			text = input.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return text;
+	}
+
+}
+
+

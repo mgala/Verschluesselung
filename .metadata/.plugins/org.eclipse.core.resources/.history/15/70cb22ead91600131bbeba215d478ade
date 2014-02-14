@@ -1,0 +1,84 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+
+
+
+public class WD {
+
+	public static void main(String[] args) {
+		
+		ArrayList<TelefonbuchEintrag> tb = new ArrayList<TelefonbuchEintrag>();
+		
+
+		int z = 0;
+		while(true)
+		{
+			String text = read();
+			char c = text.charAt(0);
+			
+			switch(c)
+			{
+			case 'E':
+				
+				
+				
+				TelefonbuchEintrag t = new TelefonbuchEintrag();
+				t.vname = read();
+				t.nname = read();
+				t.tel = read();
+				
+				tb.add(new TelefonbuchEintrag());
+			
+				
+				
+				
+				z++;
+				
+				
+				
+				break;
+			case 'A':
+				for(int i = 0;i<tb.length;i++)
+				{
+					System.out.println(tb[i].vname);
+					System.out.println(tb[i].nname);
+					System.out.println(tb[i].tel);
+				}
+				break;
+			case 'X':
+				System.exit(0);
+				break;
+			case 'L':
+				
+				int x = Integer.parseInt(read());
+				
+				tb[x].vname = null;
+				tb[x].nname = null;
+				tb[x].tel = null;
+				
+			}
+			
+			
+		}
+		
+	}
+	
+	public static String read()
+	{
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		String text = null;
+		try {
+			text = input.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return text;
+	}
+
+}
+
+

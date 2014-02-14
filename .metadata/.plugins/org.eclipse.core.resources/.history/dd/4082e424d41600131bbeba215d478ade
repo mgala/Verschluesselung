@@ -1,0 +1,37 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import javax.swing.JOptionPane;
+
+
+public class WD {
+
+	public static void main(String[] args) {
+		
+		
+		while(true)
+		{
+			String text = read();
+			
+			
+		}
+		
+	}
+	
+	public String read()
+	{
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		String text = null;
+		try {
+			text = input.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return text;
+	}
+
+}
+
+

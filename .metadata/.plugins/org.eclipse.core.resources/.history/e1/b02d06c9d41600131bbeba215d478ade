@@ -1,0 +1,52 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+
+
+public class WD {
+
+	public static void main(String[] args) {
+		
+		String[] namen = new String[10];
+		
+		while(true)
+		{
+			String text = read();
+			char c = text.charAt(0);
+			
+			switch(c)
+			{
+			case 'E':
+				
+				break;
+			case 'A':
+				//ausgabe
+				break;
+			case 'X':
+				System.exit(0);
+				break;
+			}
+			
+			
+		}
+		
+	}
+	
+	public static String read()
+	{
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+		String text = null;
+		try {
+			text = input.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return text;
+	}
+
+}
+
+
