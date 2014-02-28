@@ -45,4 +45,5 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
 </qualifiedTypeNameHistroy>
