@@ -1,0 +1,8 @@
+package cipher.gala;
+
+public class SubstitutionCipher extrends MonoAlphabeticCipher{
+	public SubstitutionCipher(){
+		
+	}
+	public void setSecretAlphabet
+}

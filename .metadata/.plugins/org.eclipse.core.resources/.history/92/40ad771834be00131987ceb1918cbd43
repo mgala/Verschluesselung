@@ -1,0 +1,10 @@
+package cipher.gala;
+
+public class MonoAlphabeticCipher {
+
+	private String secretAlphabet = "uflpwdrasjmconqybvtexhzkgi"; 
+	
+	public MonoAlphabeticCipher(){
+		
+	}
+}

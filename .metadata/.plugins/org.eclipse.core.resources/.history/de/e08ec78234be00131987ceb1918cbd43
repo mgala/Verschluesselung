@@ -1,0 +1,18 @@
+package cipher.gala;
+
+public class MonoAlphabeticCipher {
+
+	private String secretAlphabet = "uflpwdrasjmconqybvtexhzkgi"; 
+	
+	public MonoAlphabeticCipher(){
+		String alphabet = "abcdefghijklmnopqrstuvwxyzäöüß"
+	}
+
+	public String getSecretAlphabet() {
+		return secretAlphabet;
+	}
+
+	protected void setSecretAlphabet(String secretAlphabet) {
+		this.secretAlphabet = secretAlphabet;
+	}
+}

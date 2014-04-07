@@ -1,0 +1,35 @@
+import java.awt.*;
+import java.sql.Time;
+
+import javax.swing.*;
+
+
+public class Sekunden extends JFrame {
+	JPanel p1, p2, p3, p4; //4 Panels werden als Attribute deklariert
+	JLabel l1, l2; //2 Panels werden als Attribute deklariert
+	JButton b1 = new JButton("Klick mich");
+	public Sekunden(){
+		this.Gui();
+	}
+	public void Gui(){
+		
+		p1 = new JPanel(); //Neues Panel wird initalisiert
+		
+		p1.setLayout(new BorderLayout()); //Dem Panel 1 wird ein BorderLayout hinzugefuegt
+		l1 = new JLabel();
+		p1.add(l1); //Label mit zahlen initialisiert
+		Font f = new Font("Times New Roman", Font.BOLD, 40); //Font Objekt erzeugt um im nachhinein die Font zu aendern
+
+		l1.setFont(f); //Schriftart vom ersten Label geaendert
+		
+		add(p1);//Hinzufuegen vom Panel
+
+		setVisible(true); //Macht das Fenster/Frame sichtbar
+		setSize(155,150); //Stellt die Groesse pixelgenau ein
+		setTitle("NEIN"); //Aendert den Titel des Programms
+		setResizable(false); //Fenster kann nicht skaliert werden
+		//setLocationRelativeTo(null); //Positioniert das Fenster in der Mitte des Monitor
+	    this.setAlwaysOnTop(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE); //Wird aus dem Arbeitsspeicher gelöscht 
+	}
+}

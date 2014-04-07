@@ -1,0 +1,14 @@
+import java.util.TimerTask;
+
+class Task extends TimerTask
+{
+  @Override public void run()
+  {
+    System.out.println( "Make my day." );
+  }
+	public static void main(String[] args) {
+		Task t1 = new Task();
+
+	}
+
+}
