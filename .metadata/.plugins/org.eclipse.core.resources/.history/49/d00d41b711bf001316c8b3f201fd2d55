@@ -1,0 +1,22 @@
+package gala.cipher;
+
+
+public class SubstitutionCipher extends MonoAlphabeticCipher {
+	/**
+	* erweitert die Klasse MonoAlphabeticCipher
+	* @author Mateusz Gala
+	* @version 2014-04-07
+	*
+	*/
+
+public SubstitutionCipher(String secretAlphabet) {
+	super();
+	super.setSecretAlphabet(secretAlphabet);
+}
+
+
+@Override
+public void setSecretAlphabet(String secretAlphabet) {	
+	super.setSecretAlphabet(secretAlphabet);
+	}
+}

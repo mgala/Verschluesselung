@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="test (2)" project="Cipher" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="gala.test.test" time="0.001">
+    <testcase name="encrypt" classname="gala.test.test" time="0.001"/>
+    <testcase name="getSecretAlphabet" classname="gala.test.test" time="0.0"/>
+    <testcase name="dencrypt" classname="gala.test.test" time="0.0"/>
+  </testsuite>
+</testrun>

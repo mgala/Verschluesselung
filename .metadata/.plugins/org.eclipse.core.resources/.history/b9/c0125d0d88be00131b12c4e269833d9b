@@ -1,0 +1,63 @@
+package gala.cipher;
+
+public class MonoAlphabeticCipher implements Cipher{
+
+	private String secretAlphabet = "uflpwdrasjmconqybvtexhzkgi"; 
+
+	public MonoAlphabeticCipher(){
+	}
+
+
+
+	public String getSecretAlphabet() {
+		return secretAlphabet;
+	}
+
+	protected void setSecretAlphabet(String secretAlphabet) {
+		this.secretAlphabet = secretAlphabet;
+	}
+
+
+
+
+	public String encrypt(String text) {
+		String text1 = text.toLowerCase();
+		String alphabet = "abcdefghijklmnopqrstuvwxyzäöüß";
+		String text2 = "";
+		for(int i = 0; i < text1.length(); i++){
+			if(alphabet.charAt(i) == text.charAt(i)){
+				char a=text1.charAt(i);
+				int stelle = alphabet.indexOf(a); 
+				if(stelle>=0){
+				text2+=this.secretAlphabet.charAt(stelle);
+					}
+				else {
+				text2+=a;
+				}
+			}
+		}
+		return text2;
+	}
+
+	@Override
+	public String decrypt(String text) {
+		String text1 = text.toLowerCase();
+		String alphabet = "abcdefghijklmnopqrstuvwxyzäöüß";
+		String text2 = "";
+		for(int i = 0; i < text1.length(); i++){
+			if(alphabet.charAt(i) == text.charAt(i)){
+				char a=text1.charAt(i);
+				int stelle = this.secretAlphabet.charAt(a);
+				if(stelle>=0){
+				text2+=alphabet.charAt(stelle);
+					}
+				else {
+				text2+=a;
+				}
+			}
+		}
+		return text2;
+
+	}
+
+}

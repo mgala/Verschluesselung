@@ -1,0 +1,13 @@
+
+import gala.cipher.MonoAlphabeticCipher;
+
+import org.junit.Test;
+
+public class test {
+	String secretAlphabet = "uflpwdrasjmconqybvtexhzkgi"; 
+	MonoAlphabeticCipher s = new MonoAlphabeticCipher();
+	public void encrypt(){
+		String text = "Ich bin ein Array"
+				if(s.encrypt(text).equals("") )
+	}
+}

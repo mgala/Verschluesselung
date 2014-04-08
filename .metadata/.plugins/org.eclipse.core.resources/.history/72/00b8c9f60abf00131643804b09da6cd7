@@ -1,0 +1,15 @@
+package gala.cipher;
+
+import javax.swing.JOptionPane;
+
+public class main {
+	public static void main(String[] args) {
+		String t = JOptionPane.showInputDialog("Gib eine");
+		MonoAlphabeticCipher a = new MonoAlphabeticCipher();
+		String b = a.encrypt(t);
+		System.out.println(b);
+	}
+	
+
+		
+}

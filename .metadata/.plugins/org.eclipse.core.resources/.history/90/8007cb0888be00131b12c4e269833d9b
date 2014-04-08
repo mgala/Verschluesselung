@@ -1,0 +1,11 @@
+package gala.cipher;
+
+import javax.crypto.Cipher;
+import javax.swing.JOptionPane;
+
+public class test {
+	String t = JOptionPane.showInputDialog("Gib eine");
+	test c = new test();
+	
+		
+}

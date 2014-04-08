@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
-<fullyQualifiedTypeName name="java.awt.GridLayout"/>
-<fullyQualifiedTypeName name="Telefonbuch"/>
 <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 <fullyQualifiedTypeName name="MyView"/>
 <fullyQualifiedTypeName name="MyController"/>
@@ -55,6 +52,12 @@
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="cipher.gala.SubstitutionCipher"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="cipher.gala.MonoAlphabeticCipher"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="javax.crypto.Cipher"/>
+<fullyQualifiedTypeName name="gala.cipher.test"/>
+<fullyQualifiedTypeName name="gala.cipher.SubstitutionCipher"/>
+<fullyQualifiedTypeName name="gala.cipher.MonoAlphabeticCipher"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="gala.cipher.Cipher"/>
 </qualifiedTypeNameHistroy>

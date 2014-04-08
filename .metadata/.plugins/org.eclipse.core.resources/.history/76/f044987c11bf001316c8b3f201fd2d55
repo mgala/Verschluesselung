@@ -1,0 +1,14 @@
+package gala.cipher;
+/**
+* Interface
+* @author Mateusz Gala
+* @version 2014-04-07
+*
+*/
+public interface Cipher {
+
+
+public String encrypt(String text);
+public String decrypt(String text);
+
+}

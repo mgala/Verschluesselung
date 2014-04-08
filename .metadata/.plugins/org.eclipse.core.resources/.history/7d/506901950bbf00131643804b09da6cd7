@@ -1,0 +1,4 @@
+package gala.test;
+
+@Runwith(Suite.class)
+@

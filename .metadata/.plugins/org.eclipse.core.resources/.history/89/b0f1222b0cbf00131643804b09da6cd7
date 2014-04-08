@@ -1,0 +1,15 @@
+
+import gala.cipher.MonoAlphabeticCipher;
+
+import org.junit.Test;
+
+public class test {
+	String secretAlphabet = "uflpwdrasjmconqybvtexhzkgi"; 
+	MonoAlphabeticCipher s = new MonoAlphabeticCipher();
+	public void encrypt(){
+		String text = "a";
+				if(s.encrypt(text).equals("u")){
+					
+				}
+	}
+}

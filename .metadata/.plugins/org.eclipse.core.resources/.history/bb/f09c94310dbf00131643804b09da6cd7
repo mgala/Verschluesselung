@@ -1,0 +1,23 @@
+
+import gala.cipher.MonoAlphabeticCipher;
+
+import org.junit.Test;
+
+public class test {
+	String secretAlphabet = "uflpwdrasjmconqybvtexhzkgi"; 
+	MonoAlphabeticCipher s = new MonoAlphabeticCipher();
+	@Test
+	public void encrypt(){
+		String text = "a";
+				if(s.encrypt(text).equals("u")){
+					throw new RuntimeException("Iwas");
+				}
+	}
+	@Test
+	public void dencrypt(){
+		String text = "u";
+				if(s.encrypt(text).equals("a")){
+					throw new RuntimeException("Iwas");
+				}
+	}
+}

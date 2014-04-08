@@ -1,0 +1,18 @@
+package gala.cipher;
+
+
+public class SubstitutionCipher extends MonoAlphabeticCipher {
+
+
+public SubstitutionCipher(String secretAlphabet) {
+super(); //Super Konstruktor
+super.setSecretAlphabet(secretAlphabet); //Methode ändert das Secret Alphabet
+}
+
+
+@Override
+public void setSecretAlphabet(String secretAlphabet) {	
+//Methode wird von MonoAlphabeticCipheraufgerufen.
+super.setSecretAlphabet(secretAlphabet);
+}
+}
